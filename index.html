@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>晚来的告白</title>
+<meta name="description" content="认识你的第一刻起，我就深深爱上了你">
+	<link rel="Shortcut Icon" href="./favicon.ico">
+	<link href="./default.css" tppabs="default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./jquery.js" tppabs="/js/jquery.js"></script>
+	<script type="text/javascript" src="./garden.js" tppabs="/js/garden.js"></script>
+    <script type="text/javascript" src="./functions.js" tppabs="/js/functions.js"></script>
+	<style>
+	.divcss5{width:0px;height:0px;line-height:0px; overflow:hidden;}
+	</style>
+
+</head><body>
+
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 138px; margin-left: 405px;">
+			<div id="code" style="margin-top: 112.5px;">
+				<span class="comments">
+				
+				<p>lcy,认识你的第一刻起，我就深深爱上了你</p>
+				<p>宝宝，和你在一起真的很幸福</p>
+				<p>我爱你，很爱很爱</p>
+				<p>爱上你的笑，像太阳一样，多么温暖</p>
+				<p>爱上你的温柔，准媳妇一样的温柔</p>
+				<p>爱上你撒娇的样子，虽然很少对我撒娇</p>
+				<p>我爱你</p>
+				<p>很爱很爱你</p>
+				<p>最后，多久结婚哈？</p>
+				
+				</span>
+
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 333px; left: 915px;">
+					<div id="messages" style="display: block;">
+						我们已经在一起...
+						<div id="elapseClock"><span class="digit">233</span> days <span class="digit">11</span> hours <span class="digit">21</span> minutes <span class="digit">27</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						最爱你的<br>
+						<div class="signature">Veasion</div>
+				</div>
+			</div>
+</div>
+
+	<div class="bg1">	
+		<div class="main">
+	     <div>
+
+		 <div style="text-align:center">
+		 <div style="width:298;height:52;"></div>
+		 </div>
+			   <div class="divcss5">
+			   Copyright ? 2017 <a href="http://www.luozhuowei.cn/" target="_blank">Veasion</a><br>
+
+			   </div>
+                </div>
+
+			<div>
+
+
+</div>
+                </div>
+		</div>
+
+	</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		        var strs = "2016-12-06 00:00:00";
+              var nowTime=new Date();
+              var together = new Date(strs.replace(/-/g,"/"));	
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用百度浏览器</a><br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+<div>
+</div>
+
+</body></html>
