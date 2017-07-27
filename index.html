@@ -33,7 +33,7 @@
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden" width="670" height="625"></canvas>
-				<div id="words" style="position: absolute; top: 333px; left: 915px;">
+				<div id="words" style="position: absolute; top: 333px; left: 915px;display:none;">
 					<div id="messages" style="display: block;">
 						我们已经在一起...
 						<div id="elapseClock"><span class="digit">233</span> days <span class="digit">11</span> hours <span class="digit">21</span> minutes <span class="digit">27</span> seconds</div>
@@ -89,6 +89,7 @@
 		    document.execCommand("stop");
 		} else {
 			setTimeout(function () {
+				$("#words").show();
 				adjustWordsPosition();
 				startHeartAnimation();
 			}, 5000);
